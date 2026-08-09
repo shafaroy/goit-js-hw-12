@@ -80,3 +80,22 @@
 .loader.is-visible {
   display: block;
 }
+
+.load-more {
+  display: none;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: white;
+  cursor: pointer;
+}
+
+.load-more.is-visible {
+  display: block;
+}
+
+.load-more:hover {
+  background-color: #6c8cff;
+}

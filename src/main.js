@@ -61,6 +61,11 @@ async function handleSubmit(event) {
 
     if (page * 15 < totalHits) {
       showLoadMoreButton();
+    } else {
+      iziToast.info({
+        message: "We're sorry, but you've reached the end of search results.",
+        position: 'topRight',
+      });
     }
 
     event.target.reset();
@@ -94,7 +99,6 @@ async function handleLoadMore() {
         behavior: 'smooth',
       });
     }
-
     const totalLoaded = page * 15;
 
     if (totalLoaded < totalHits) {
